@@ -6,7 +6,7 @@ import {container} from './main.js'
 const messageHTML = document.querySelector('#buttonMessage')
 
 
-export let selectedCards = []
+let selectedCards = []
 
 //functions for buttons
 export const pickCards = () => {
@@ -17,10 +17,6 @@ export const pickCards = () => {
     messageHTML.innerHTML = `Cards Picked: ${selectedCards[0].name} and ${selectedCards[1].name}!`
     container.innerHTML=(buildPikomon(selectedCards))
 }
-
-// export const pickCardsTrigger = () => {
-//     pickCards(database)
-// }
 
 export const fight = () => {
     if (selectedCards.length === 0) {
