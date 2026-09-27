@@ -5,26 +5,22 @@ import {container} from './main.js'
 //target message element
 const messageHTML = document.querySelector('#buttonMessage')
 
+
 export let selectedCards = []
 
 //functions for buttons
-const pickCards = (array) => {
+export const pickCards = () => {
     selectedCards = [];
     for (let i=0; i < 2; i++) {
-        selectedCards.push(array[Math.floor(Math.random()* array.length)])
+        selectedCards.push(database[Math.floor(Math.random()* database.length)])
     }
-
-    // selectedCards.push(array[Math.floor(Math.random()* array.length)])
-
-
-
     messageHTML.innerHTML = `Cards Picked: ${selectedCards[0].name} and ${selectedCards[1].name}!`
     container.innerHTML=(buildPikomon(selectedCards))
 }
 
-export const pickCardsTrigger = () => {
-    pickCards(database)
-}
+// export const pickCardsTrigger = () => {
+//     pickCards(database)
+// }
 
 export const fight = () => {
     if (selectedCards.length === 0) {
@@ -34,8 +30,6 @@ export const fight = () => {
     container.innerHTML=(buildPikomon(winner))
     messageHTML.innerHTML = `${selectedCards[1].name} WINS!`
     }
-        
-    
 }
 
 export const clear = () => {

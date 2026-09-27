@@ -17,8 +17,7 @@ export const buildPikomon = (array) => {
                 </p>
             </div>
         </div>
-        
-        `
+    `
     }
     return pikomonHTML
 }
