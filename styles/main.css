@@ -2,49 +2,119 @@
     text-align: center;
     font-family: copperplate;
     font-size: 5em;
-    margin-top: 1rem;
+    margin: 10px 0 15px;
+    transition: transform .2s ease;
+}
+
+.button-section {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    gap: 50px;
+}
+
+#buttonMessageDiv {
+    position: relative;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+#buttonMessage {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-family: copperplate;
+    font-size: 1.5em;
+    text-transform:uppercase;
+}
+
+.button-section button {
+    color: white;
+    background: black;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    font-size: 1.2em;
+    font-family: copperplate;
+    transition: all .2s ease;
+}
+
+.button-section button:hover {
+    background: rgb(57, 57, 57);
+    transform: scale(1.1)
 }
 
 #container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     margin-bottom: 3rem;
 }
 
+/* blur cards */
+/* body:hover .piko-card {
+     opacity: 0.5;
+    filter: blur(3px);
+} */
+
+
+
+
 .piko-card {
-    flex-basis: 25%;
-    margin: 3em;
+    flex-basis: 15%;
+    /* display: flex; */
+    text-align: center;
+    margin: 2em;
+    border: 2px solid black;
+    border-radius: 3em;
+    padding: .5em;
+    transition: all .2s ease;
+}
+
+.piko-card:hover {
+    /* opacity: 1;
+    filter: blur(0); */
+    transform: scale(1.01);
 }
 
 .piko-img {
-    width: 100%;
+    width: 80%;
+   margin: auto;
     border-radius: 1em;
 }
 
-.piko-info {
+/* .piko-info {
     padding-left: 1.25rem;
-}
+} */
 
 .info-text {
     font-family: monospace;
-    font-size: 1rem;
+    font-size: 1em;
+    font-style: italic;
 }
 
 .piko-name {
     font-family: "copperplate", fantasy;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
-.piko-abilities {
+.piko-card>p {
+    margin-top: 0;
+}
 
+.piko-card>h2 {
+    margin-bottom: 6px;
 }
 
 .piko-category {
-
+    font-family: monospace;
+    font-size: 1.2em;
 }
 
-.piko-weakness {
-
+.bold-underline {
+    font-weight: 700;
+    text-decoration:underline;
 }
