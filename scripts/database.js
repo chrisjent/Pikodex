@@ -5,7 +5,8 @@ export const database = [
         imageUrl: 'assets/crouchy.png',
         category: 'Hunch',
         abilities: 'Crouch',
-        weakness: 'Posture'
+        weakness: 'Posture',
+        lives: 5
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ export const database = [
         imageUrl: 'assets/flink.png',
         category: 'Small and Angry',
         abilities: 'Quick Reflexes',
-        weakness: 'Impatience'
+        weakness: 'Impatience',
+        lives: 5
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ export const database = [
         imageUrl: 'assets/putron.png',
         category: 'Stinky',
         abilities: 'Toxic Gas Emission',
-        weakness: 'Air Freshener'
+        weakness: 'Air Freshener',
+        lives: 5
     },
     {
         id: 4,
@@ -29,7 +32,8 @@ export const database = [
         imageUrl: 'assets/sherton.png',
         category: 'Kind of Stupid',
         abilities: 'Extraordinary Clumsiness',
-        weakness: 'Sharp Objects'
+        weakness: 'Sharp Objects',
+        lives: 5
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ export const database = [
         imageUrl: 'assets/gobojomo.png',
         category: 'Monkee',
         abilities: 'Banana Telekinesis',
-        weakness: 'Peeling Bananas'
+        weakness: 'Peeling Bananas',
+        lives: 5
     },
     {
         id: 6,
@@ -45,7 +50,8 @@ export const database = [
         imageUrl: 'assets/pete.png',
         category: 'Business',
         abilities: 'PowerPoint Mastery',
-        weakness: 'Paper Cuts'
+        weakness: 'Paper Cuts',
+        lives: 5
     },   
     {
         id: 7,
@@ -53,7 +59,8 @@ export const database = [
         imageUrl: 'assets/tarmus.png',
         category: 'Rocks',
         abilities: 'Rock Solid Defense',
-        weakness: 'Moss Growth'
+        weakness: 'Moss Growth',
+        lives: 5
     },
     {
         id: 8,
@@ -61,7 +68,8 @@ export const database = [
         imageUrl: 'assets/throrugg.png',
         category: 'Throw Rug',
         abilities: 'Tangle Trap',
-        weakness: 'Vacuum Cleaners'
+        weakness: 'Vacuum Cleaners',
+        lives: 5
     },
     {
         id: 9,
@@ -69,6 +77,7 @@ export const database = [
         imageUrl: 'assets/skunch.png',
         category: 'Mischievous',
         abilities: 'Master of Pranks',
-        weakness: 'Close Talkers'
+        weakness: 'Close Talkers',
+        lives: 5
     }
 ];
