@@ -59,13 +59,18 @@ export const back = () => {
 let playAgain = () => {
     database.splice(0, database.length)
     database.push(...backup)
+    for (const item of database) {
+        item.lives = 5
+    }
     container.innerHTML=(buildPikomon(database)) 
     loserCards.splice(0, loserCards.length)
     updateEliminatedList()
     buttonMessageHTML.innerHTML = "";
+ 
     pickCardsButton.disabled = false;
     playAgainButton.disabled = true;
     fightButton.disabled = true;
+    backButton.disabled = true;
     
 }
 
