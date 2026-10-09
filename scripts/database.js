@@ -1,4 +1,4 @@
-export const database = [
+export let database = [
     {
         id: 1,
         name: 'Crouchy',
@@ -81,3 +81,5 @@ export const database = [
         lives: 5
     }
 ];
+
+export const backup = [...database]

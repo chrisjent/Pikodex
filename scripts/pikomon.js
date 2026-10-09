@@ -1,3 +1,5 @@
+import { database } from './database.js'
+
 export const buildPikomon = (array) => {
     let pikomonHTML = '';
     for (const pikomon of array) {
@@ -19,4 +21,9 @@ export const buildPikomon = (array) => {
     `
     }
     return pikomonHTML
+}
+
+export const rebuildAllPikomon = () => {
+    const allPikomon = buildPikomon(database) 
+    return allPikomon
 }
